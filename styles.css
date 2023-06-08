@@ -1,0 +1,86 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  font-size: 20px;
+  font-weight: 500;
+}
+ul,ol,li {
+  list-style: none;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+header.header {
+  width: 100%;
+}
+.header__content-container {
+  min-height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-link {
+  color: #1f1f1f;
+}
+.nav-ul {
+  margin-left: 75px;
+  display: flex;
+  flex-direction: row;
+}
+.nav-li {
+  margin-right: 20px;
+}
+.nav-li:last-child {
+  margin-right: 0;
+}
+.socialMedias-nav{
+  display: flex;
+  align-items: center;
+}
+path{
+  transition: .5s;
+}
+.telegram-link:hover > a > .telegramIcon > path {
+  fill: #0088cc;
+}
+.posts__list-container {
+  padding: 35px 0px;
+}
+button{
+  display: inline-block;
+  width: 100%;
+}
+.post {
+  min-height: 100px;
+  padding: 20px 10px;
+  border: 1px solid #e3e3e3;
+  margin: 25px 0px;
+  color: #333;
+
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.post-active{
+}
+
+.post:focus{
+  background: #1f1f1f;
+  color: #f1f1f1;
+  outline: 3px solid green;
+}
